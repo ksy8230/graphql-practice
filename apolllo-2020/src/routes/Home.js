@@ -1,6 +1,7 @@
 import React from 'react';
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
+import Movie from '../components/Movie';
 
 const GET_MOVIES = gql`
 {
@@ -17,6 +18,6 @@ export default () => {
         return 'loading...';
     } 
     if (data && data.movies) {
-        return data.movies.map(m => <h1 key={m.id}>{m.id}</h1>)
+        return data.movies.map(m => <Movie key={m.id} id={m.id} />)
     }
 }
