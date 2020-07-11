@@ -1,10 +1,14 @@
-type Mollang{
+type Movie{
      name : String!
-     age : Int!
-     gender: String!
+     score : Int!
 }
 
 type Query{
-    person: Mollang!
+    movies: [Movie]!
+    movie(id: Int!): Movie!
 }
 
+type Mutation {
+    addMovie(name: String!, score: Int!): Movie!
+    deleteMovie(id: Int!): Boolean!
+}
