@@ -17,3 +17,6 @@ graphql은 위와 같은 유형들을 정의한다.
 (어떤 mutation, 어떤 query들을 우리가 가졌는지...)
 
 - playground : postman 같은 것으로 데이터베이스를 테스틓볼수 있다
+
+2. 클라이언트 만들기
+- `apollo-boost` 설치
