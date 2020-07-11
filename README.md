@@ -20,3 +20,6 @@ graphql은 위와 같은 유형들을 정의한다.
 
 2. 클라이언트 만들기
 - `apollo-boost` 설치
+- index.js에 ApolloProvider 연결, client 연결
+- 데이터를 불러오고자 하는 파일에 쿼리문 작성
+- 리액트 훅 함수인 `useQuery`를 이용해 데이터 가져오기
